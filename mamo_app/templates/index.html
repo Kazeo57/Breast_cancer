@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>
+		cancer du sein
+		</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='/css/style.css')}}">
+	</head>
+	<body>
+		<header>
+			<div class="head">	
+				NISI MULIER
+			</div>
+		</header>
+		<div class="acceuil">
+		<div class="menu">
+			<div><a href="index.html">Acceuil</a></div>
+			<div><a href="{{url_for('diagnostic')}}">Diagnostic</a></div>
+			<div>Historique</div>
+		</div>
+		<div class="img">
+				
+			
+				
+				<div><img src="{{url_for('static',filename='images/cancer-1007550_1280.jpg')}}"></div>
+				
+			</div>
+		</div>
+		<div class="#">
+
+			
+			<div class="article">
+				<div class="name">Lire Article</div>
+				<div><article><img src="{{url_for('static',filename='images/cavitacion-2894822_1280.jpg')}}"></article>
+				</div>
+				<div class="name">Lire Article</div>
+				<div class="second"><img src="{{url_for('static',filename='images/october-7521183_1280.jpg')}}"></div>
+			</div>
+		</div>
+	</body>
+</html>

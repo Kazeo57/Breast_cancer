@@ -1,0 +1,136 @@
+header
+{
+
+	text-align:center;
+	font-size:30px;
+	color:pink;
+	font-family:"ComicSans MS",sans-serif;
+}
+.head
+{
+	border:5px groove rgb(219, 12, 47);
+	border-left:3px pink;
+	border-right:3px pink;
+	border-radius:50px;
+	
+	padding:5px;
+	width:500px;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom:5px;
+
+}
+link
+{
+	text-decoration: None;
+}
+.acceuil
+{
+	display:flex;
+	
+	
+}
+.menu
+{
+
+	width:25%;
+	height:500px;
+	background-color:rgba(171, 167, 167, 0.384);
+	padding:5px;
+	border-bottom-right-radius:100px;
+	border-bottom:10px groove pink;
+	border-right:3px solid rgb(219, 12, 47);
+	
+	
+}
+
+.menu>div
+{
+	font-size:20px;
+	font-family:"Arial Black",sans-serif;
+	padding-bottom:10px;
+	border:1px solid black;
+	padding:5px;
+	border-radius:5px;
+	background-color:#F8F8FF;
+	margin-bottom:50px;
+	border-top-right-radius:50px;
+	border-bottom-left-radius:50px;
+	color:rgb(10, 171, 171);
+	transition:0.2s;
+	border-style:dotted;
+	text-align:center;
+}
+
+.menu>div:hover
+{
+	transform:scale(0.8);
+}
+.menu>div>a
+{
+	color:rgb(10, 171, 171);
+	text-decoration-line: none;
+	
+	
+}
+.menu>div>a:hover
+{
+	color:aqua;
+	
+}
+.img
+{
+	border-bottom:5px ridge black;
+	/*height:500px;*/
+	width:75%;
+	padding-bottom: 10px;
+	border-radius:20px;
+	
+}
+/*Image de <a href="https://fr.freepik.com/photos-gratuite/close-up-femme-brandissant-ruban-sensibilisation_5482173.htm#query=cancer%20sein&position=3&from_view=keyword&track=ais&uuid=cc5b7ec6-f0a3-4f5e-8238-fa67631cadad">Freepik</a>*/
+
+.img>img
+{
+	border-radius:20px;	
+	
+}
+/*
+.img>div>img
+{
+	width:300px;
+	height:500px;
+	border-radius:20px;
+	border:5px groove;
+}
+*/
+.name
+{
+	padding-top:10px;
+	text-align: center;
+	font-size: 20px;
+	background-color:grey;
+	color:red;
+}
+div>article>img
+{
+	height:500px;
+	width:100%;
+}
+.article>.second>img
+{
+	width:100%;
+	height:500px;
+}
+.name
+{
+	width:20%;
+}
+
+body
+{	
+	background-color:black;
+}
+div>div>div>article>img
+{
+	width:70%;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/fee.css')}}">
+
+</head>
+<body>
+	<div class="main">
+		<form action="/diagnostic/" method="post" enctype="multipart/form-data" id="uploadForm">
+
+		<div><input type="file" name="file" value="Upload image" class="title" accept="image/png ,image/jpeg  ,image/jpg" onchange="uploadImage()">
+		<input type="submit" value="Valider" id="submit"></div>
+		<div>
+		{% if end=="success" %}
+		<p style="font-size: 50px;color:green;">Validé avec succès.</p>
+		<div class="diagnostic">
+		<img src="{{url_for('static',filename='images/1.png')}} " width=70% height=500px>
+		<div class="conclusion" >
+			<p>{{saying}}</p>
+		</div>
+		</div>
+		{% endif %}
+		</div>
+	</form>
+	</div>
+	<script>
+		/*
+		function uploadImage(){
+			var fileInput=document.getElementyId('fileInput');
+			var file=fileInput.files[0];
+
+			//Création de l'instance pour l'envoi au serveur
+			var formData=new FormData();
+			formData.append('file',file);
+
+			//Envoie du fichier au serveur
+			var xresult=new XMLHttpRequest();
+			xresult.open('POST','/',true);
+			xresult.onload=function(){
+				if(xresult.status===200){
+				console.log('Image transféré avec suucès.');
+				}else{
+					console.error('Erreur lors du transfert de l\'image.');
+				}
+			};
+			//Envoie du formulaire
+			xresult.send(formData);
+		}*/
+		function uploadImage() {
+            var fileInput = document.getElementById('fileInput');
+            var file = fileInput.files[0];
+
+            var formData = new FormData();
+            formData.append('file', file);
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/', true);
+
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log('Image transférée avec succès.');
+                } else {
+                    console.error('Erreur lors du transfert de l\'image.');
+                }
+            };
+
+            xhr.send(formData);
+        }
+	</script>
+</body>
+</html>
